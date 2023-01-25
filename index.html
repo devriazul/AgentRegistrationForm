@@ -85,7 +85,8 @@
             border-radius: 3px;
         }
         
-        input {
+        input,
+        select {
             width: calc(100% - 10px);
             padding: 5px;
         }
@@ -272,32 +273,65 @@
             </div>
             <br/>
             <fieldset>
-                <legend>Participant Information</legend>
-                <p>Participant 1</p>
-                <div class="item">
-                    <label for="fname"> First Name<span>*</span></label>
-                    <input id="fname" type="text" name="fname" />
-                </div>
-                <div class="item">
-                    <label for="activity">Activity #<span>*</span></label>
-                    <input id="activity" type="text" name="activity" />
-                </div>
-                <div class="item">
-                    <label for="fee">Fee ($)<span>*</span></label>
-                    <input id="fee" type="number" name="fee" />
-                </div>
-                <div class="item">
-                    <label for="bdate">Birth Date <span>*</span></label>
-                    <input id="bdate" type="date" name="bdate" />
-                    <i class="fas fa-calendar-alt"></i>
-                </div>
-                <div class="item">
-                    <p>Grade</p>
-                    <select>
-                        <option selected value="" disabled selected></option>
-                        <option value="1" >1st</option>
-                        <option value="2">2nd</option>
-                    </select>
+                <legend>Agent Company Information</legend>
+                <div class="colums">
+                    <div class="item">
+                        <label for="fname"> Company Name<span>*</span></label>
+                        <input id="fname" type="text" name="fname" />
+                    </div>
+                    <div class="item">
+                        <label for="activity">Company Registration Number<span>*</span></label>
+                        <input id="activity" type="text" name="activity" />
+                    </div>
+                    <div class="item">
+                        <label for="fname"> Company Trade License<span>*</span></label>
+                        <input id="fname" type="file" name="fname" />
+                    </div>
+                    <div class="item">
+                        <label for="activity">Company Trade License Number<span>*</span></label>
+                        <input id="activity" type="text" name="activity" />
+                    </div>
+                    <div class="item">
+                        <label for="bdate">Company Established Date <span>*</span></label>
+                        <input id="bdate" type="date" name="bdate" />
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="item">
+                        <label for="activity">Company Number of Employee<span>*</span></label>
+                        <input id="activity" type="text" name="activity" />
+                    </div>
+                    <div class="item">
+                        <label for="activity">Company Email<span>*</span></label>
+                        <input id="activity" type="email" name="activity" />
+                    </div>
+                    <div class="item">
+                        <label for="activity">Company Phone<span>*</span></label>
+                        <input id="activity" type="text" name="activity" />
+                    </div>
+                    <div class="item">
+                        <label>Company Country</label>
+                        <select>
+                            <option selected value="" disabled selected>Select Country</option>
+                            <option value="1" >Bangladesh</option>
+                            <option value="2">India</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="activity">Company State<span>*</span></label>
+                        <input id="activity" type="text" name="activity" />
+                    </div>
+                    <div class="item">
+                        <label for="activity">Company City<span>*</span></label>
+                        <input id="activity" type="text" name="activity" />
+                    </div>
+                    <div class="item">
+                        <label for="activity">Company ZIP Code<span>*</span></label>
+                        <input id="activity" type="text" name="activity" />
+                    </div>
+                    <div class="item">
+                        <label for="activity">Company Address<span>*</span></label>
+                        <textarea name="" id="" cols="10" rows="4"></textarea>
+                    </div>
                 </div>
             </fieldset>
             <br/>
