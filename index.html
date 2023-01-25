@@ -268,7 +268,7 @@
     <div class="testbox">
         <form>
             <div class="banner">
-                <h1>Camp Registration</h1>
+                <h1>Agent Registration Form</h1>
             </div>
             <br/>
             <fieldset>
@@ -294,86 +294,10 @@
                 <div class="item">
                     <p>Grade</p>
                     <select>
-              <option selected value="" disabled selected></option>
-             <option value="1" >1st</option>
-              <option value="2">2nd</option>
-              <option value="3">3rd</option>
-             <option value="4">4th</option>
-             <option value="5">5th</option>
-              <option value="6">6th</option>
-             <option value="7">7th</option>
-            <option value="8">8th</option>
-            <option value="9">9th</option>
-             <option value="10">10th</option>
-              <option value="11">11th</option>
-             <option value="12">12th</option>
-            </select>
-                </div>
-                <p>Participant 2</p>
-                <div class="item">
-                    <label for="fname"> First Name<span>*</span></label>
-                    <input id="fname" type="text" name="fname" />
-                </div>
-                <div class="item">
-                    <label for="activity">Activity #<span>*</span></label>
-                    <input id="activity" type="text" name="activity" />
-                </div>
-                <div class="item">
-                    <label for="fee1">Fee ($)<span>*</span></label>
-                    <input id="fee1" type="number" name="fee1" />
-                </div>
-                <div class="item">
-                    <label for="bdate">Birth Date <span>*</span></label>
-                    <input id="bdate" type="date" name="bdate" />
-                    <i class="fas fa-calendar-alt"></i>
-                </div>
-                <div class="item">
-                    <p>Grade</p>
-                    <select>
-              <option selected value="" disabled selected></option>
-              <option value="1" >1st</option>
-              <option value="2">2nd</option>
-              <option value="3">3rd</option>
-             <option value="4">4th</option>
-             <option value="5">5th</option>
-              <option value="6">6th</option>
-             <option value="7">7th</option>
-            <option value="8">8th</option>
-            <option value="9">9th</option>
-             <option value="10">10th</option>
-              <option value="11">11th</option>
-             <option value="12">12th</option>
-            </select>
-                </div>
-                <p>Participant 3</p>
-                <div class="item">
-                    <label for="fname"> First Name<span>*</span></label>
-                    <input id="fname" type="text" name="fname" />
-                </div>
-                <div class="item">
-                    <label for="activity">Activity #<span>*</span></label>
-                    <input id="activity" type="text" name="activity" />
-                </div>
-                <div class="item">
-                    <label for="fee2">Fee ($)<span>*</span></label>
-                    <input id="fee2" type="number" name="fee2" />
-                </div>
-                <div class="question">
-                    <label>City Resident?<br/>(non-city residents add $5.00 for each participant)</label>
-                    <div class="question-answer">
-                        <div>
-                            <input type="radio" value="none" id="radio_1" name="city" />
-                            <label for="radio_1" class="radio"><span>Yes - I am a city resident</span></label>
-                        </div>
-                        <div>
-                            <input type="radio" value="none" id="radio_2" name="city" />
-                            <label for="radio_2" class="radio"><span>No - I am not a city resident</span></label>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <span id="result"></span>
-                    <button type="calc" id="calc" onclick="calcNumbers()">Calculate</button>
+                        <option selected value="" disabled selected></option>
+                        <option value="1" >1st</option>
+                        <option value="2">2nd</option>
+                    </select>
                 </div>
             </fieldset>
             <br/>
@@ -449,16 +373,6 @@
             </div>
         </form>
         </div>
-        <script>
-            var a = document.getElementByID("fee").value;
-            var b = document.getElementByID("fee1").value;
-            var c = document.getElementByID("fee2").value;
-            var result = a + b + c;
-
-            function calcNumbers() {
-                document.getElementByID("result").innerHTML = result;
-            }
-        </script>
 </body>
 
 </html>
